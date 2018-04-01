@@ -1,6 +1,7 @@
 if (!Array.prototype.blah) {
   Object.defineProperty(Array.prototype, 'blah', {
     value: function(predicate) {
+      log();
      // 1. Let O be ? ToObject(this value).
       if (this == null) {
         throw new TypeError('"this" is null or not defined');
