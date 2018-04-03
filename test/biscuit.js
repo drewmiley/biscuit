@@ -1,9 +1,5 @@
 console.log('Testing Biscuits');
 
-console.log('Array Method - blah');
-
-console.log(`[1, 2].blah(a => a === 1, true) = ${ [1, 2].blah(a => a === 1, true) }`);
-
 console.log(`Array Method - count
 	[1, 2].count(a => a === 1) = ${ [1, 2].count(a => a === 1) }
 	[1, 2].count(a => a === 0) = ${ [1, 2].count(a => a === 0) }
@@ -16,6 +12,16 @@ console.log(`Array Method - even
 	[].even() = [${ [].even() }]
 	[1, 2, 3, 4].even() = [${ [1, 2, 3, 4].even() }]
 	[true].even() = [${ [true].even() }]`);
+
+console.log(`Array Method - fibonacci
+	[1, 2].fibonacci() = [${ [1, 2].fibonacci() }]
+	[].fibonacci() = [${ [].fibonacci() }]
+	[1, 2, 3, 4].fibonacci() = [${ [1, 2, 3, 4].fibonacci() }]
+	[true].fibonacci() = [${ [true].fibonacci() }]
+	[1, 2].fibonacci(true) = [${ [1, 2].fibonacci(true) }]
+	[].fibonacci(true) = [${ [].fibonacci(true) }]
+	[1, 2, 3, 4].fibonacci(true) = [${ [1, 2, 3, 4].fibonacci(true) }]
+	[true].fibonacci(true) = [${ [true].fibonacci(true) }]`);
 
 console.log(`Array Method - odd
 	[1, 2].odd() = [${ [1, 2].odd() }]
