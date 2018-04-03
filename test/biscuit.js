@@ -10,3 +10,9 @@ console.log(`Array Method - count
 	[].count(a => a === 1) = ${ [].count(a => a === 1) }
 	[1, 2, 3, 4].count(a => a % 2) = ${ [1, 2, 3, 4].count(a => a % 2) }
 	[true, true, false].count(Boolean) = ${ [true, true, false].count(Boolean) }`);
+
+	console.log(`Array Method - odd
+		[1, 2].odd() = [${ [1, 2].odd() }]
+		[].odd() = [${ [].odd() }]
+		[1, 2, 3, 4].odd() = [${ [1, 2, 3, 4].odd() }]
+		[true].odd() = [${ [true].odd() }]`);
