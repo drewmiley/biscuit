@@ -30,6 +30,13 @@ console.log(`Array Method - max
 	[1, 2, 3, 4].max() = ${ [1, 2, 3, 4].max() }
 	['a', 'b', 'c'].max() = ${ ['a', 'b', 'c'].max() }`);
 
+console.log(`Array Method - min
+	['zzz', 'aaaaaaa'].min((a, b) => a.length - b.length) = ${ ['zzz', 'aaaaaaa'].min((a, b) => a.length - b.length) }
+	[1, 2].min() = ${ [1, 2].min() }
+	[].min() = ${ [].min() }
+	[1, 2, 3, 4].min() = ${ [1, 2, 3, 4].min() }
+	['a', 'b', 'c'].min() = ${ ['a', 'b', 'c'].min() }`);
+
 console.log(`Array Method - odd
 	[1, 2].odd() = [${ [1, 2].odd() }]
 	[].odd() = [${ [].odd() }]
