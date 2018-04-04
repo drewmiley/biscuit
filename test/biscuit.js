@@ -33,7 +33,9 @@ console.log(`Array Method - interleave
 	[1, 2].interleave([3, 4]) = ${ JSON.stringify([1, 2].interleave([3, 4])) }
 	[].interleave([3, 4]) = ${ JSON.stringify([].interleave([3, 4])) }
 	[1, 2].interleave([]) = ${ JSON.stringify([1, 2].interleave([])) }
-	`);
+	[1, 2, 5].interleave([3, 4], 2) = ${ JSON.stringify([1, 2, 5].interleave([3, 4], 2)) }
+	[1, 2, 5, 7, 8, 9].interleave([3, 4], 3) = ${ JSON.stringify([1, 2, 5, 7, 8, 9].interleave([3, 4], 3)) }
+	[1, 2, 4].interleave([5, 6], 4) = ${ JSON.stringify([1, 2, 4].interleave([5, 6], 4)) }`);
 
 console.log(`Array Method - max
 	['zzz', 'aaaaaaa'].max((a, b) => a.length - b.length) = ${ ['zzz', 'aaaaaaa'].max((a, b) => a.length - b.length) }
