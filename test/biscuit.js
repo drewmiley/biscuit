@@ -8,20 +8,26 @@ console.log(`Array Method - count
 	[true, true, false].count(Boolean) = ${ [true, true, false].count(Boolean) }`);
 
 console.log(`Array Method - even
-	[1, 2].even() = [${ [1, 2].even() }]
-	[].even() = [${ [].even() }]
-	[1, 2, 3, 4].even() = [${ [1, 2, 3, 4].even() }]
-	[true].even() = [${ [true].even() }]`);
+	[1, 2].even() = ${ JSON.stringify([1, 2].even()) }
+	[].even() = ${ JSON.stringify([].even()) }
+	[1, 2, 3, 4].even() = ${ JSON.stringify([1, 2, 3, 4].even()) }
+	[true].even() = ${ JSON.stringify([true].even()) }`);
 
 console.log(`Array Method - fibonacci
-	[1, 2].fibonacci() = [${ [1, 2].fibonacci() }]
-	[].fibonacci() = [${ [].fibonacci() }]
-	[1, 2, 3, 4].fibonacci() = [${ [1, 2, 3, 4].fibonacci() }]
-	[true].fibonacci() = [${ [true].fibonacci() }]
-	[1, 2].fibonacci(true) = [${ [1, 2].fibonacci(true) }]
-	[].fibonacci(true) = [${ [].fibonacci(true) }]
-	[1, 2, 3, 4].fibonacci(true) = [${ [1, 2, 3, 4].fibonacci(true) }]
-	[true].fibonacci(true) = [${ [true].fibonacci(true) }]`);
+	[1, 2].fibonacci() = ${ JSON.stringify([1, 2].fibonacci()) }
+	[].fibonacci() = ${ JSON.stringify([].fibonacci()) }
+	[1, 2, 3, 4].fibonacci() = ${ JSON.stringify([1, 2, 3, 4].fibonacci()) }
+	[true].fibonacci() = ${ JSON.stringify([true].fibonacci()) }
+	[1, 2].fibonacci(true) = ${ JSON.stringify([1, 2].fibonacci(true)) }
+	[].fibonacci(true) = ${ JSON.stringify([].fibonacci(true)) }
+	[1, 2, 3, 4].fibonacci(true) = ${ JSON.stringify([1, 2, 3, 4].fibonacci(true)) }
+	[true].fibonacci(true) = ${ JSON.stringify([true].fibonacci(true)) }`);
+
+console.log(`Array Method - flatten
+	[[1], 2, [3, 4]].flatten() = ${ JSON.stringify([[1], 2, [3, 4]].flatten()) }
+	[1, 2, 3, 4].flatten() = ${ JSON.stringify([1, 2, 3, 4].flatten()) }
+	[[1], 2, [[3, 4]]].flatten() = ${ JSON.stringify([[1], 2, [[3, 4]]].flatten()) }
+	[[1], 2, [3, [4]]].flatten() = ${ JSON.stringify([[1], 2, [3, [4]]].flatten()) }`);
 
 console.log(`Array Method - max
 	['zzz', 'aaaaaaa'].max((a, b) => a.length - b.length) = ${ ['zzz', 'aaaaaaa'].max((a, b) => a.length - b.length) }
@@ -38,7 +44,7 @@ console.log(`Array Method - min
 	['a', 'b', 'c'].min() = ${ ['a', 'b', 'c'].min() }`);
 
 console.log(`Array Method - odd
-	[1, 2].odd() = [${ [1, 2].odd() }]
-	[].odd() = [${ [].odd() }]
-	[1, 2, 3, 4].odd() = [${ [1, 2, 3, 4].odd() }]
-	[true].odd() = [${ [true].odd() }]`);
+	[1, 2].odd() = ${ JSON.stringify([1, 2].odd()) }
+	[].odd() = ${ JSON.stringify([].odd()) }
+	[1, 2, 3, 4].odd() = ${ JSON.stringify([1, 2, 3, 4].odd()) }
+	[true].odd() = ${ JSON.stringify([true].odd()) }`);
