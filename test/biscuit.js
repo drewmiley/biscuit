@@ -23,6 +23,13 @@ console.log(`Array Method - fibonacci
 	[1, 2, 3, 4].fibonacci(true) = [${ [1, 2, 3, 4].fibonacci(true) }]
 	[true].fibonacci(true) = [${ [true].fibonacci(true) }]`);
 
+console.log(`Array Method - max
+	['zzz', 'aaaaaaa'].max((a, b) => a.length - b.length) = ${ ['zzz', 'aaaaaaa'].max((a, b) => a.length - b.length) }
+	[1, 2].max() = ${ [1, 2].max() }
+	[].max() = ${ [].max() }
+	[1, 2, 3, 4].max() = ${ [1, 2, 3, 4].max() }
+	['a', 'b', 'c'].max() = ${ ['a', 'b', 'c'].max() }`);
+
 console.log(`Array Method - odd
 	[1, 2].odd() = [${ [1, 2].odd() }]
 	[].odd() = [${ [].odd() }]
