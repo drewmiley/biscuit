@@ -29,6 +29,12 @@ console.log(`Array Method - flatten
 	[[1], 2, [[3, 4]]].flatten() = ${ JSON.stringify([[1], 2, [[3, 4]]].flatten()) }
 	[[1], 2, [3, [4]]].flatten() = ${ JSON.stringify([[1], 2, [3, [4]]].flatten()) }`);
 
+console.log(`Array Method - interleave
+	[1, 2].interleave([3, 4]) = ${ JSON.stringify([1, 2].interleave([3, 4])) }
+	[].interleave([3, 4]) = ${ JSON.stringify([].interleave([3, 4])) }
+	[1, 2].interleave([]) = ${ JSON.stringify([1, 2].interleave([])) }
+	`);
+
 console.log(`Array Method - max
 	['zzz', 'aaaaaaa'].max((a, b) => a.length - b.length) = ${ ['zzz', 'aaaaaaa'].max((a, b) => a.length - b.length) }
 	[1, 2].max() = ${ [1, 2].max() }
