@@ -27,7 +27,11 @@ console.log(`Array Method - flatten
 	[[1], 2, [3, 4]].flatten() = ${ JSON.stringify([[1], 2, [3, 4]].flatten()) }
 	[1, 2, 3, 4].flatten() = ${ JSON.stringify([1, 2, 3, 4].flatten()) }
 	[[1], 2, [[3, 4]]].flatten() = ${ JSON.stringify([[1], 2, [[3, 4]]].flatten()) }
-	[[1], 2, [3, [4]]].flatten() = ${ JSON.stringify([[1], 2, [3, [4]]].flatten()) }`);
+	[[1], 2, [3, [4]]].flatten() = ${ JSON.stringify([[1], 2, [3, [4]]].flatten()) }
+	[[1], 2, [[3, 4]]].flatten() = ${ JSON.stringify([[1], 2, [[3, 4]]].flatten(2)) }
+	[[1], 2, [3, [4]]].flatten() = ${ JSON.stringify([[1], 2, [3, [4]]].flatten(2)) }
+	[[1], 2, [[3, [4]]]].flatten() = ${ JSON.stringify([[1], 2, [[3, [4]]]].flatten(2)) }
+	[[1], 2, [3, [[4]]]].flatten() = ${ JSON.stringify([[1], 2, [3, [[4]]]].flatten(2)) }`);
 
 console.log(`Array Method - interleave
 	[1, 2].interleave([3, 4]) = ${ JSON.stringify([1, 2].interleave([3, 4])) }

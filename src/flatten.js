@@ -1,7 +1,10 @@
 Array.prototype.flatten = function() {
     const array = Object(this);
     return array.reduce((acc, d) => {
-		const concatArray = Array.isArray(d) ? d : [d];
-		return acc.concat(concatArray);
+		let concat = [d];
+		while (concat.filter(val => Array.isArray(val)).length > 0) {
+			concat = flattenArrayOneLevel(concat);
+		}
+		return acc.concat(concat);
 	}, []);
 }
