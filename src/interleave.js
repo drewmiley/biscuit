@@ -1,19 +1,12 @@
-Array.prototype.interleave = function(interleave, spacing = 1) {
-    let array = Object(this);
-	let interleaveArray = interleave;
+Array.prototype.interleave = function(interleaveArray, spacing = 1) {
+    const array = Object(this);
 	let result = [];
-	let value;
 	while (array.length || interleaveArray.length) {
-		for (var i = 0; i < spacing; i++) {
-			value = array.shift();
-			if (value && value !== 0 && value != '') {
-				result.push(value);
-			}
-		}
-		value = interleaveArray.shift();
-		if (value && value !== 0 && value != '') {
-			result.push(value);
-		}
+        const newInterleaves = Array.from(Array(spacing).keys())
+            .map(d => array.shift())
+            .filter(d => d || d === 0 || d === '')
+            .concat([interleaveArray.shift()].filter(d => d || d === 0 || d === ''))
+        newInterleaves.forEach(d => result.push(d));
 	}
 	return result;
 }
