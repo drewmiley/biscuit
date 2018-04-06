@@ -34,7 +34,9 @@ console.log(`Array Method - flatten
 	[[1], 2, [3, [[4]]]].flatten() = ${ JSON.stringify([[1], 2, [3, [[4]]]].flatten(2)) }`);
 
 console.log(`Array method - groupBy
-	`);
+	['aaaa', 'bb', 'cccc', 'dd', 'eee'].groupBy(d => d.length) = ${ JSON.stringify(['aaaa', 'bb', 'cccc', 'dd', 'eee'].groupBy(d => d.length)) }
+	['haaaa', 'hbb', 'jcccc', 'kdd', 'jeee'].groupBy(d => d.substring(0, 1)) = ${ JSON.stringify(['haaaa', 'hbb', 'jcccc', 'kdd', 'jeee'].groupBy(d => d.substring(0, 1))) }
+	[2, 5, 10, 6, 7, 8, 4, 3].groupBy(d => d % 3) = ${ JSON.stringify([2, 5, 10, 6, 7, 8, 4, 3].groupBy(d => d % 3)) }`);
 
 console.log(`Array Method - interleave
 	[1, 2].interleave([3, 4]) = ${ JSON.stringify([1, 2].interleave([3, 4])) }
