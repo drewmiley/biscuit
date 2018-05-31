@@ -1,5 +1,12 @@
 console.log('Testing Biscuits');
 
+console.log(`Array Method - applyFunctions
+	[].applyFunctions() = ${ JSON.stringify([].applyFunctions()) }
+	[1, 2].applyFunctions() = ${ JSON.stringify([1, 2].applyFunctions()) }
+	[].applyFunctions([d => d + 1, d => 2 * d]) = ${ JSON.stringify([].applyFunctions([d => d + 1, d => 2 * d])) }
+	[1, 2].applyFunctions([d => d + 1, d => 2 * d]) = ${ JSON.stringify([1, 2].applyFunctions([d => d + 1, d => 2 * d])) }
+	['a'].applyFunctions([d => d + 'a', d => d + 'a', d => d + 'a', d => d + 'a', d => d + 'a']) = ${ JSON.stringify(['a'].applyFunctions([d => d + 'a', d => d + 'a', d => d + 'a', d => d + 'a', d => d + 'a'])) }`);
+
 console.log(`Array Method - count
 	[1, 2].count(a => a === 1) = ${ [1, 2].count(a => a === 1) }
 	[1, 2].count(a => a === 0) = ${ [1, 2].count(a => a === 0) }
