@@ -14,6 +14,14 @@ console.log(`Array Method - count
 	[1, 2, 3, 4].count(a => a % 2) = ${ [1, 2, 3, 4].count(a => a % 2) }
 	[true, true, false].count(Boolean) = ${ [true, true, false].count(Boolean) }`);
 
+console.log(`Array Method - deleteWhile
+	[1, 2, 3, 4, 5].deleteWhile(arr => arr.length > 0) = ${ JSON.stringify([1, 2, 3, 4, 5].deleteWhile(arr => arr.length > 0)) }
+	[1, 2, 3, 4, 5].deleteWhile(arr => arr.length > 2) = ${ JSON.stringify([1, 2, 3, 4, 5].deleteWhile(arr => arr.length > 2)) }
+	[1, 2, 3, 4, 5].deleteWhile(arr => arr.length > 2, 1) = ${ JSON.stringify([1, 2, 3, 4, 5].deleteWhile(arr => arr.length > 2, 1)) }
+	[1, 2, 3, 4, 5].deleteWhile(arr => arr.length > 2, () => 1) = ${ JSON.stringify([1, 2, 3, 4, 5].deleteWhile(arr => arr.length > 2, () => 1)) }
+	[1, 2, 3, 4, 5].deleteWhile(arr => arr.length > 2, arr => arr.indexOf(Math.min(...arr))) = ${ JSON.stringify([1, 2, 3, 4, 5].deleteWhile(arr => arr.length > 2, arr => arr.indexOf(Math.min(...arr)))) }
+	[1, 2, 3, 4, 5].deleteWhile(arr => arr.length > 2, arr => arr.length - 2) = ${ JSON.stringify([1, 2, 3, 4, 5].deleteWhile(arr => arr.length > 2, arr => arr.length - 2)) }`);
+
 console.log(`Array Method - even
 	[1, 2].even() = ${ JSON.stringify([1, 2].even()) }
 	[].even() = ${ JSON.stringify([].even()) }
@@ -45,6 +53,16 @@ console.log(`Array method - groupBy
 	['haaaa', 'hbb', 'jcccc', 'kdd', 'jeee'].groupBy(d => d.substring(0, 1)) = ${ JSON.stringify(['haaaa', 'hbb', 'jcccc', 'kdd', 'jeee'].groupBy(d => d.substring(0, 1))) }
 	[2, 5, 10, 6, 7, 8, 4, 3].groupBy(d => d % 3) = ${ JSON.stringify([2, 5, 10, 6, 7, 8, 4, 3].groupBy(d => d % 3)) }`);
 
+console.log(`Array Method - insertWhile
+	[1, 2, 3, 4, 5].insertWhile(1, arr => arr.length < 8) = ${ JSON.stringify([1, 2, 3, 4, 5].insertWhile(1, arr => arr.length < 8)) }
+	[1, 2, 3, 4, 5].insertWhile(() => 1, arr => arr.length < 8) = ${ JSON.stringify([1, 2, 3, 4, 5].insertWhile(() => 1, arr => arr.length < 8)) }
+	[1, 2, 3, 4, 5].insertWhile(arr => arr[2], arr => arr.length > 8) = ${ JSON.stringify([1, 2, 3, 4, 5].insertWhile(arr => arr[2], arr => arr.length < 8)) }
+	[1, 2, 3, 4, 5].insertWhile(arr => arr[arr.length - 1] + 1, arr => arr.length > 8) = ${ JSON.stringify([1, 2, 3, 4, 5].insertWhile(arr => arr[arr.length - 1] + 1, arr => arr.length < 8)) }
+	[1, 2, 3, 4, 5].insertWhile(1, arr => arr.length < 8, 1) = ${ JSON.stringify([1, 2, 3, 4, 5].insertWhile(1, arr => arr.length > 8, 1)) }
+	[1, 2, 3, 4, 5].insertWhile(() => 1, arr => arr.length > 8, () => 1) = ${ JSON.stringify([1, 2, 3, 4, 5].insertWhile(() => 1, arr => arr.length < 8, () => 1)) }
+	[1, 2, 3, 4, 5].insertWhile(arr => arr[2], arr => arr.length > 8, arr => arr.indexOf(Math.min(...arr))) = ${ JSON.stringify([1, 2, 3, 4, 5].insertWhile(arr => arr[2], arr => arr.length < 8, arr => arr.indexOf(Math.min(...arr)))) }
+	[1, 2, 3, 4, 5].insertWhile(arr => arr[arr.length - 1] + 1, arr => arr.length > 8, arr => arr.length - 2) = ${ JSON.stringify([1, 2, 3, 4, 5].insertWhile(arr => arr[arr.length - 1] + 1, arr => arr.length < 8, arr => arr.length - 2)) }`);
+
 console.log(`Array Method - interleave
 	[0, 2].interleave([3, 4]) = ${ JSON.stringify([0, 2].interleave([3, 4])) }
 	[1, 2].interleave([3, '']) = ${ JSON.stringify([1, 2].interleave([3, ''])) }
@@ -74,11 +92,3 @@ console.log(`Array Method - odd
 	[].odd() = ${ JSON.stringify([].odd()) }
 	[1, 2, 3, 4].odd() = ${ JSON.stringify([1, 2, 3, 4].odd()) }
 	[true].odd() = ${ JSON.stringify([true].odd()) }`);
-
-console.log(`Array Method - spliceWhile
-	[1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 0) = ${ JSON.stringify([1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 0)) }
-	[1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 2) = ${ JSON.stringify([1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 2)) }
-	[1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 2, 1) = ${ JSON.stringify([1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 2, 1)) }
-	[1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 2, () => 1) = ${ JSON.stringify([1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 2, () => 1)) }
-	[1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 2, arr => arr.indexOf(Math.min(...arr))) = ${ JSON.stringify([1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 2, arr => arr.indexOf(Math.min(...arr)))) }
-	[1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 2, arr => arr.length - 2) = ${ JSON.stringify([1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 2, arr => arr.length - 2)) }`);

@@ -1,4 +1,4 @@
-Array.prototype.spliceWhile = function(condition, index = arr => arr.length - 1) {
+Array.prototype.deleteWhile = function(condition, index = arr => arr.length - 1) {
 	const array = Object(this);
 	const indexFunction = typeof index === 'function' ? index : () => index;
 	while (condition(array)) {
