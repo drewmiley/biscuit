@@ -74,3 +74,11 @@ console.log(`Array Method - odd
 	[].odd() = ${ JSON.stringify([].odd()) }
 	[1, 2, 3, 4].odd() = ${ JSON.stringify([1, 2, 3, 4].odd()) }
 	[true].odd() = ${ JSON.stringify([true].odd()) }`);
+
+console.log(`Array Method - spliceWhile
+	[1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 0) = ${ JSON.stringify([1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 0)) }
+	[1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 2) = ${ JSON.stringify([1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 2)) }
+	[1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 2, 1) = ${ JSON.stringify([1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 2, 1)) }
+	[1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 2, () => 1) = ${ JSON.stringify([1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 2, () => 1)) }
+	[1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 2, arr => arr.indexOf(Math.min(...arr))) = ${ JSON.stringify([1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 2, arr => arr.indexOf(Math.min(...arr)))) }
+	[1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 2, arr => arr.length - 2) = ${ JSON.stringify([1, 2, 3, 4, 5].spliceWhile(arr => arr.length > 2, arr => arr.length - 2)) }`);
